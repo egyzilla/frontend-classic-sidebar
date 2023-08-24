@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+aside {
+  width: 250px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #437EEB;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.section-title::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f138";
+  color: #437EEB;
+  position: absolute;
+  top: 8px;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.egyzilla {
+  width: 100%;
+  padding: 1.5rem 20rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.description {
+  border: 2px solid #eee;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.description::after {
+  font-family: "Font Awesome 6 Brands";
+  content: "\f16d";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+
+}
+
+.description a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  color: #5e5e5e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+ul li:last-of-type {
+  border: none;
+  padding-bottom: 0;
+}
+
+.num {
+  background-color: #eee;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 5px;
+}
+
+.gallery .section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.gallery .section-content img {
+  width: 70px;
+  height: 70px;
+  background-color: lightblue;
+}
+
+.archives ul li {
+  border: none;
+}
+
+.archives ul li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.archives ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f07b";
+  color: #5e5e5e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
